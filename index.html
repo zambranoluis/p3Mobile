@@ -64,26 +64,29 @@
         <img class=" min-[320px]:h-[24px] lg:h-[40px]" src="./imagenes/logo netflix2.png" alt="">
         <div class="flex gap-[5px]">
             <div class="flex mr-[0px] items-center">
-                <span  class="relative left-[50px] top-[0px] material-symbols-outlined text-white text-[20px]">
+                <span  class="relative m left-[50px] top-[0px] material-symbols-outlined text-white text-[20px]">
                     language
                 </span>
-                <span class="relative left-[120px] top-[-0px] material-symbols-outlined text-white  ">
+                <span class="relative min-[280px]:left-[60px] min-[600px]:left-[130px] top-[-0px] material-symbols-outlined text-white  ">
                     arrow_drop_down
                 </span>
-                <select name="Lenguaje" class="appearance-none pl-[30px] h-[32px] w-[65px] min-[530px]:w-[130px] text-white bg-[#0F1118] rounded border border-[#5E5F61]" >
-                    <option class="" value="">Español</option>
-                    <option class="" value="">English</option>
-                </select>
+                <div class="bg-[#0F1118] rounded border border-[#5E5F61] h-[32px] min-[280px]:w-[65px] min-[600px]:w-[130px]">
+                    <select name="Lenguaje" class=" bg-transparent relative appearance-none pl-[30px] h-[32px] min-[280px]:w-[65px] min-[600px]:w-[130px] text-white " >
+                        <option class="min-[280px]:hidden " value=""></option>
+                        <option class="" value="">Español</option>
+                        <option class="" value="">English</option>
+                    </select>
+                </div>
             </div>
             <a class="mr-[2px] text-white text-center font-bold text-[14px] h-[32px] w-[117px] bg-[#E50914] rounded-[4px] hover:cursor-pointer hover:bg-[#C11119] pt-[6px]" href="">Iniciar sesión</a>
         </div>
     </nav>
 
     <!-- Fondo Portadas  -->
-    <section class="min-[320px]:w-full min-[320px]:h-[78vh] w-[91vw] h-[80vh] bg-[url('./imagenes/fondoPortadasDePeliculasES.jpg')] bg-cover rounded-[18px]  ">
+    <section class="min-[320px]:w-full min-[320px]:h-[87vh] lg:h-[100vh] xl:h-[108.2vh] w-[91vw] h-[80vh] bg-[url('./imagenes/fondoPortadasDePeliculasES.jpg')] bg-cover rounded-[18px]  ">
         <div id="gradienteL" class="rounded-[18px] w-full h-full">
             <div id="gradienteBL" class="rounded-[18px] w-full h-full ">
-                <div class="pt-[70px] pl-[20px] pr-[14px] flex z-6 flex-col  min-[320px]:w-60% md:w-[70%]">
+                <div class="lg:pt-[100px] lg:pl-[100px] min-[600px]:pt-[100px] min-[600px]:pl-[60px] pt-[70px] pl-[20px] pr-[14px] flex z-6 flex-col  min-[320px]:w-60% md:w-[70%]">
                     <div class="w-[80%]">
                         <h1 class="min-[280px]:text-[1rem] leading-tight min-[280px]:text-[2.3rem] lg:text-[3rem] font-['roboto'] text-white font-black text-[2.5rem] text-left xl:text-[4rem] ">
                             Películas y series ilimitadas y mucho más
@@ -118,7 +121,7 @@
                     <h1 class="xl:text-[3rem] min-[320px]:text-[2rem] text-white font-black text-[45px]">Disfruta en tu TV</h2>
                     <h3 class="xl:text-[1.4rem] min-[320px]:text-[1rem] text-white text-[20px]">Ve en smart TV, PlayStation, Xbox, Chromecast, Apple TV, reproductores de Blu-ray y más.</h3>
                 </div>
-                <img class="min-[600px]:w-[250px] md:w-[300px] lg:w-[450px] xl:w-[500px]" src="./imagenes/imagenTv.png" alt="TV">
+                <img data-aos="fade-left" class="min-[600px]:w-[250px] md:w-[300px] lg:w-[450px] xl:w-[500px]" src="./imagenes/imagenTv.png" alt="TV">
             </div>
 
             <!-- TV -->
@@ -127,7 +130,7 @@
                     <h1 class="xl:text-[3rem] min-[320px]:text-[2rem] text-white font-black text-[45px]">Disfruta donde quieras</h2>
                     <h3 class="xl:text-[1.4rem] min-[320px]:text-[1rem] text-white text-[20px]">Películas y series ilimitadas en tu teléfono, tablet, computadora y TV.</h3>
                 </div>
-                <img class="min-[600px]:w-[250px] md:w-[300px] lg:w-[450px] xl:w-[500px]" src="./imagenes/imagenDispositivos.png" alt="TV">
+                <img data-aos="fade-right" class="min-[600px]:w-[250px] md:w-[300px] lg:w-[450px] xl:w-[500px]" src="./imagenes/imagenDispositivos.png" alt="TV">
             </div>
             <!-- Kids -->
             <div class="md:ml-[70px] md:mr-[70px] lg:ml-[95px] lg:mr-[95px] xl:ml-[100px] xl:mr-[100px] min-[600px]:ml-[45px] min-[600px]:mr-[45px] sm:ml-[50px] border-b-[8px] min-[600px]:flex-row pb-[30px] border-[#262238] flex space-between min-[320px]:flex-col pt-[20px] min-[320px]:ml-[20px] min-[320px]:mr-[20px] mt-[15px] md:flex-row">
@@ -135,7 +138,7 @@
                     <h1 class="xl:text-[3rem] min-[320px]:text-[2.2rem] text-white font-black text-[45px]">Crea perfiles para niños</h2>
                     <h3 class="xl:text-[1.4rem] min-[320px]:text-[1rem] text-white text-[20px]">Los niños vivirán aventuras con sus personajes favoritos en un espacio diseñado exclusivamente para ellos, sin costo con tu membresía.</h3>
                 </div>
-                <img class="min-[600px]:w-[250px] md:w-[300px] lg:w-[450px] xl:w-[500px]" src="./imagenes/imagenKids.png" alt="Kids">
+                <img data-aos="fade-left" class="min-[600px]:w-[250px] md:w-[300px] lg:w-[450px] xl:w-[500px]" src="./imagenes/imagenKids.png" alt="Kids">
             </div>
             <!-- Descargas -->
             <div class="md:ml-[70px] md:mr-[70px] lg:ml-[95px] lg:mr-[95px] xl:ml-[100px] xl:mr-[100px] min-[600px]:ml-[45px] min-[600px]:mr-[45px] mb-[10px] min-[600px]:flex-row-reverse md:flex-row-reverse sm:ml-[50px] flex min-[600px]:flex-row space-between min-[320px]:flex-col pt-[20px] min-[320px]:ml-[20px] min-[320px]:mr-[20px] mt-[15px] md:flex-row">
@@ -143,7 +146,7 @@
                     <h1 class="xl:text-[3rem] min-[320px]:text-[2rem] text-white font-black text-[45px]">Descarga tus series para verlas offline</h2>
                     <h3 class="xl:text-[1.4rem] min-[320px]:text-[1rem] text-white text-[20px]">Guarda tu contenido favorito y tendrás siempre algo para ver.</h3>
                 </div>
-                <img class="min-[600px]:w-[250px] md:w-[300px] lg:w-[450px] xl:w-[500px]" src="./imagenes/imagenMobile.png" alt="descargas">
+                <img data-aos="fade-right" class="min-[600px]:w-[250px] md:w-[300px] lg:w-[450px] xl:w-[500px]" src="./imagenes/imagenMobile.png" alt="descargas">
             </div>
         </div>
     </section>
@@ -155,7 +158,7 @@
             <div class="flex flex-col gap-[10px] ">
                 <div class="flex flex-col gap-[8px]">
                     <!-- Pregunta 1 -->
-                    <div class="flex flex-col gap-[1px]">
+                    <div data-aos="flip-down" class="flex flex-col gap-[1px]">
                         <div tabindex="0" class="min-[320px]:flex min-[320px]:w-full min-[320px]:h-[70px]  peer group flex justify-between items-center pl-[20px] pr-[20px] bg-[#132144] hover:bg-[#21315F]">
                             <p class="text-white text-[25px] min-[320px]:text-[1.2rem]">¿Qué es Netflix?</p>
                             <span class="material-symbols-outlined min-[320px]:p-[0px] min-[320px]:text-[1.6rem] min-[320px]:font-light text-white text-[55px] group-focus:-rotate-45">add</span>
@@ -166,7 +169,7 @@
                         </div>
                     </div>
                     <!-- Pregunta 2 -->
-                    <div class="flex flex-col gap-[1px]">
+                    <div data-aos="flip-down" class="flex flex-col gap-[1px]">
                         <div tabindex="0" class="min-[320px]:flex min-[320px]:w-full min-[320px]:h-[70px]  peer group flex justify-between items-center pl-[20px] pr-[20px] bg-[#132144] hover:bg-[#21315F]">
                             <p class="text-white text-[25px] min-[320px]:text-[1.2rem]">¿Qué es Netflix?</p>
                             <span class="material-symbols-outlined min-[320px]:p-[0px] min-[320px]:text-[1.6rem] min-[320px]:font-light text-white text-[55px] group-focus:-rotate-45">add</span>
@@ -177,7 +180,7 @@
                         </div>
                     </div>
                     <!-- Pregunta 3 -->
-                    <div class="flex flex-col gap-[1px]">
+                    <div data-aos="flip-down" class="flex flex-col gap-[1px]">
                         <div tabindex="0" class="min-[320px]:flex min-[320px]:w-full min-[320px]:h-[70px]  peer group flex justify-between items-center pl-[20px] pr-[20px] bg-[#132144] hover:bg-[#21315F]">
                             <p class="text-white text-[25px] min-[320px]:text-[1.2rem]">¿Qué es Netflix?</p>
                             <span class="material-symbols-outlined min-[320px]:p-[0px] min-[320px]:text-[1.6rem] min-[320px]:font-light text-white text-[55px] group-focus:-rotate-45">add</span>
@@ -188,7 +191,7 @@
                         </div>
                     </div>
                     <!-- Pregunta 4 -->
-                    <div class="flex flex-col gap-[1px]">
+                    <div data-aos="flip-down" class="flex flex-col gap-[1px]">
                         <div tabindex="0" class="min-[320px]:flex min-[320px]:w-full min-[320px]:h-[70px]  peer group flex justify-between items-center pl-[20px] pr-[20px] bg-[#132144] hover:bg-[#21315F]">
                             <p class="text-white text-[25px] min-[320px]:text-[1.2rem]">¿Qué es Netflix?</p>
                             <span class="material-symbols-outlined min-[320px]:p-[0px] min-[320px]:text-[1.6rem] min-[320px]:font-light text-white text-[55px] group-focus:-rotate-45">add</span>
@@ -199,7 +202,7 @@
                         </div>
                     </div>
                     <!-- Pregunta 5 -->
-                    <div class="flex flex-col gap-[1px]">
+                    <div data-aos="flip-down" class="flex flex-col gap-[1px]">
                         <div tabindex="0" class="min-[320px]:flex min-[320px]:w-full min-[320px]:h-[70px]  peer group flex justify-between items-center pl-[20px] pr-[20px] bg-[#132144] hover:bg-[#21315F]">
                             <p class="text-white text-[25px] min-[320px]:text-[1.2rem]">¿Qué es Netflix?</p>
                             <span class="material-symbols-outlined min-[320px]:p-[0px] min-[320px]:text-[1.6rem] min-[320px]:font-light text-white text-[55px] group-focus:-rotate-45">add</span>
@@ -210,7 +213,7 @@
                         </div>
                     </div>
                     <!-- Pregunta 6 -->
-                    <div class="flex flex-col gap-[1px]">
+                    <div data-aos="flip-down" class="flex flex-col gap-[1px]">
                         <div tabindex="0" class="min-[320px]:flex min-[320px]:w-full min-[320px]:h-[70px]  peer group flex justify-between items-center pl-[20px] pr-[20px] bg-[#132144] hover:bg-[#21315F]">
                             <p class="text-white text-[25px] min-[320px]:text-[1.2rem]">¿Qué es Netflix?</p>
                             <span class="material-symbols-outlined min-[320px]:p-[0px] min-[320px]:text-[1.6rem] min-[320px]:font-light text-white text-[55px] group-focus:-rotate-45">add</span>
