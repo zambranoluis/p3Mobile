@@ -62,7 +62,7 @@
 
 </style>
 
-<body class="flex items-center gap-[10px]  flex-col bg-[#00081D] min-[320px]:ml-[24px] min-[320px]:mr-[24px] sm:ml-[32px] sm:mr-[32px]  md:ml-[32px] md:mr-[33px] xl:ml-[48px] xl:mr-[48px]">
+<body class="flex gap-[10px]  flex-col bg-[#00081D] min-[320px]:ml-[24px] min-[320px]:mr-[24px] sm:ml-[32px] sm:mr-[32px]  md:ml-[32px] md:mr-[33px] xl:ml-[48px] xl:mr-[48px]">
     
     <nav class="flex justify-between items-center w-full h-[80px] min-[600px]:h-[86px]  ">
         <img class=" min-[320px]:h-[24px] lg:h-[40px]" src="./imagenes/logo netflix2.png" alt="">
@@ -127,7 +127,7 @@
                         <div class="flex min-[280px]:pt-[40px] min-[420px]:pt-[20px] min-[280px]:flex-col min-[600px]:flex-row  gap-[20px] min-[600px]:gap-[10px] w-full ">
                             <div tabindex="0" class="bg-[#141116]/70 min-[280px]:w-[100%] min-[600px]:w-[190px] min-[820px]:w-full z-0  min-[280px]:h-[48px] min-[600px]:h-[56px] lg:w-[380px] flex  focus-within:border focus-within:border-[3px] focus-within:border-transparent focus-within:outline focus-within:outline-2 focus-within:outline-[white] rounded-[4px] justify-center items-center">
                                 <input class="inputPrimerBuscar pl-[15px] pt-[15px] relative z-20   text-white  flex peer bg-transparent  rounded-[4px] outline-none border border-1 border-[#616162] invalid:border-[#EB3942]   text-[#B8B9BA] text-[16px]  min-[280px]:h-full min-[280px]:w-full " placeholder="" type="email">
-                                <p class=" text-[#B8B9BA] flex peer-focus:text-[13px] peer-focus:top-[515px] z-10 absolute min-[280px]:top-[525px] min-[280px]:left-[55px]">Email</p>
+                                <p class=" text-[#B8B9BA] flex peer-focus:text-[13px] z-10 min-[280px]:top-[473px] min-[280px]:peer-focus:top-[465px] absolute  min-[280px]:left-[60px] ">Email</p>
                                 <div class="hidden absolute gap-[10px] min-[280px]:top-[550px] min-[280px]:left-[42px] peer-invalid:flex w-[100%] items-center   ">
                                     <p class=" text-[#EB3942] text-[0.7rem]"><span class=" material-symbols-outlined text-[#EB3942] text-[0.8rem] ">
                                         cancel
@@ -269,10 +269,10 @@
     </section>
 
 
-    <footer class="pt-[130px] pb-[130px]">
+    <footer class="min-[320px]:ml-[15px]  min-[320px]:pb-[100px] min-[320px]:mt-[120px] min-[600px]:ml-[75px] md:ml-[100px]">
         <section class="flex min-[320px]:flex-col ">
             <p class="text-[#B3B5BB] min-[320px]:text-[1rem] min-[320px]:font-bold" >¿Preguntas? Llama al <span><a class="underline  " href="">1 (408) 469-4467 (USA)</a></span></p>
-            <div class="grid xl:grid-cols-4 min-[600px]:gap-[10px] min-[320px]:grid-cols-1 mt-[40px] min-[600px]:grid-cols-2 lg:grid-cols-3  leading-[35px] min-[320px]:font-small ">
+            <div class="grid xl:grid-cols-4 min-[320px]:grid-cols-1 mt-[40px] min-[600px]:grid-cols-2 lg:grid-cols-3  leading-[35px] min-[320px]:font-small ">
                 <a class="text-[#B3B5BB] underline" href="">Preguntas frecuentes</a>
                 <a class="text-[#B3B5BB] underline" href="">Centro de ayuda</a>
                 <a class="text-[#B3B5BB] underline" href="">Cuenta</a>
@@ -289,19 +289,17 @@
                 <a class="text-[#B3B5BB] underline" href="">Avisos legales</a>
                 <a class="text-[#B3B5BB] underline" href="">Solo en Netflix</a>
             </div>
-            <div class="flex items-center relative top-[20px] -left-[45px]">
-                <span  class="relative left-[52px] top-[0px] material-symbols-outlined text-white text-[20px]">
+            <div class="flex gap-[13px] mt-[40px] ml-[-65px]">
+                <span  class="relative -right-[78px] -top-[-5px] material-symbols-outlined text-white text-[20px]">
                     language
                 </span>
-                <span class="relative min-[280px]:left-[120px] material-symbols-outlined text-white  ">
+                <span class="relative material-symbols-outlined text-white -right-[135px] -top-[-5px] ">
                     arrow_drop_down
                 </span>
-                <div class="bg-[#0F1118] rounded border border-[#5E5F61] h-[32px]">
-                    <select name="Lenguaje" class=" bg-transparent relative appearance-none pl-[35px] h-[32px] min-[280px]:w-[130px] text-white " >
-                        <option class="" value="">Español</option>
-                        <option class="" value="">English</option>
-                    </select>
-                </div>
+                <select class="appearance-none h-[32px] w-[131px] text-white bg-[#0F1118] pl-[35px] rounded border border-[#5E5F61]" name="Lenguaje" id="">
+                    <option value="">Español</option>
+                    <option value="">English</option>
+                </select>
             </div>
             <p class="text-[#B3B5BB] mt-[50px]">Netflix Venezuela</p>
         </section>
