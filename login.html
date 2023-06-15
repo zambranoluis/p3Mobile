@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Importamos tailwind desde un CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Fuentes y caracteres -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Importo AOS desde su CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>Netflix Login Mnk</title>
+
+
+</head>
+<script src="js/myscript.js"></script>
+
+<style>
+    *{
+    font-family: roboto;
+    box-sizing: border-box;
+    margin: 0px;
+    top: 0px;
+    }
+</style>
+
+<body class=" flex flex-col  bg-[#000000]">
+    <!-- Logo -->
+    <img class="min-[280px]:h-[45px] absolute top-[20px] left-[15px]" src="./imagenes/logo netflix2.png" alt="Logo">
+<!-- Inicia sesión -->
+    <section class="flex flex-col border-b border-[#737373] ">
+        <div class="flex flex-col  min-[280px]:mx-[5%] min-[280px]:mt-[22%] min-[280px]:mb-[30%] ">    
+            <h1 class="text-white text-[2rem] " >
+                Inicia sesión
+            </h1>
+            <div class="flex flex-col gap-[40px] pt-[25px]">
+                <div class="flex flex-col relative bg-[#333333] min-[320px]:w-[100%] rounded">    
+                    <input class="bg-transparent relative z-20 outline-none text-white pl-[20px] pt-[20px] min-[320px]:h-[50px] min-[320px]:w-full" type="text">
+                    <div class="flex relative top-[-35px] left-[20px] z-10">
+                        <p class="text-[#8C8C8C] text-[0.9rem] flex absolute ">Email o número de teléfono</p>
+                    </div>
+                    <div  class="flex absolute top-[55px] text-[0.8rem] pl-[3px]">
+                        <p class="text-[#E87C03] ">Ingresa un email o un número de teléfono válido.</p>
+                    </div>
+                </div>
+                
+                <div class="flex flex-col relative bg-[#333333] min-[320px]:w-[100%] rounded">    
+                    <input class="bg-transparent relative z-20 outline-none text-white pl-[20px] pt-[20px] min-[320px]:h-[50px] min-[320px]:w-full" type="text">
+                    <div class="flex relative top-[-35px] left-[20px] z-10">
+                        <p class="text-[#8C8C8C] text-[0.9rem] flex absolute ">Contraseña</p>
+                    </div>
+                    <div  class="flex absolute top-[55px] text-[0.8rem] pl-[3px]">
+                        <p class="text-[#E87C03] ">La contraseña debe tener entre 4 y 60 caracteres.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col pt-[60px]">
+                <a href="" class="flex rounded justify-center items-center text-white h-[50px] bg-[#E50914]">Iniciar sesión</a>
+                <div class="flex justify-between pt-[10px]">
+                    <div class="flex gap-[5px]">
+                        <input class="" type="checkbox">
+                        <p class="text-[#B3B3B3] text-[0.83rem]">Recuérdame</p>
+                    </div>
+                        <a href="" class="text-[#B3B3B3] text-[0.83rem] hover:underline">¿Necesitas ayuda?</a>
+                </div>
+            </div>
+            <div class="flex flex-col pt-[10px] gap-[10px]">
+                <p class="text-[#737373]">¿Primera vez en Netflix? <span class="text-white hover:underline"><a href="">Suscríbete ahora</a></span>.</p>
+                <p class="text-[#8C8C8C] text-[0.83rem] leading-tight">Esta página está protegida por Google reCAPTCHA para comprobar que no eres un robot. <span class="text-[#0071EB]"><a class="hover:underline" href="">Más info.</a></span></p>
+            </div>
+        </div>
+        
+
+    </section>
+
+    <footer>
+        <p class="text-[#737373]">¿Preguntas? Llama al 1 (408) 469-4467 (USA)</p>
+        <div class="grid grid-cols-2 ">
+            <p class="text-[#737373]">Preguntas frecuentes</p>
+            <p class="text-[#737373]">Términos de uso</p>
+            <p class="text-[#737373]">Preferencias de cookies</p>
+            <p class="text-[#737373]">Centro de ayuda</p>
+            <p class="text-[#737373]">Privacidad</p>
+            <p class="text-[#737373]">Información corporativa</p>
+        </div>
+        <select name="" id=""><option value="">MNKMNKMNK</option></select>
+
+        
+    </footer>
+
+    <div class="h-[2000px]">
+
+    </div>
+
+</body>
+
+</html>
